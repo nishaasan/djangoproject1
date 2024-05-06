@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Django App
+        {% endblock%}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>|
+        <a href="/about">About</a>|
+        <a href="/posts">posts</a>|
+
+    </nav>
+    <main>
+        {% block content %}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores quae corrupti nulla molestias quia fugit dolorum ipsa voluptatum, iste sed eligendi nisi accusantium animi ea vero eum ratione consequatur minus rerum reprehenderit labore! Accusamus cumque ab repudiandae voluptatum. Facere ipsam amet tenetur maiores, autem deserunt. Nam non, aliquid sapiente explicabo dolorum fugiat ex quia debitis veniam rerum alias veritatis saepe culpa neque temporibus. Error voluptatibus rem, excepturi suscipit sit esse quis? Repellendus nobis at officiis harum, nihil ut dolor vitae rerum facere velit cupiditate quasi, a beatae quibusdam fugiat fuga. Ullam quos optio quidem commodi rerum rem odio animi.
+        {% endblock%}
+    </main>
+</body>
+</html>
